@@ -1,0 +1,773 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*-------HOME------*/
+
+#home{
+    
+    overflow: hidden;
+    position: relative;
+}
+
+#home::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+#home::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility:hidden;
+    -moz-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-backface-visibility:hidden;
+    -webkit-transform: translateZ(0) scale(1.0, 1.0) ;
+    -moz-transform:translateZ(0) scale(1.0, 1.0) ;
+    -ms-transform:translateZ(0) scale(1.0, 1.0) ;
+    -o-transform:translateZ(0) scale(1.0, 1.0) ;
+    transform: translateZ(0) scale(1.0, 1.0);
+    background: url(../images/1-hero.jpg.jpg) no-repeat center center/cover;
+    background-attachment: fixed;
+    animation: increase 60s linear 10ms infinite;
+    -webkit-transition: all 0.2s ease-in-out ;
+    -moz-transition: all 0.2s ease-in-out ;
+    -ms-transition: all 0.2s ease-in-out ;
+    -o-transition:all 0.2s ease-in-out ;
+    transition:all 0.2s ease-in-out ;
+    z-index: -2;
+}
+
+@keyframes increase{
+    0% {transform:scale(1)}
+    100% {transform: scale(1.8);}
+}
+
+
+#logo{
+    display: flex;
+    color: #313131;
+    font-size: 22px;
+    cursor: pointer;
+    font-family: "Raleway";
+    letter-spacing: -0.03em;
+    font-weight: 700;
+}
+#home a{
+    text-decoration: none;
+    color:#313131;
+}
+#menu{
+    display:flex ;
+    justify-content: space-between;
+    font-size: 13px;
+    cursor: pointer;
+
+    
+}
+#menu li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 15px;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 0.1px solid rgba(222, 222, 222, 0.1) !important;
+    background-color: white;
+    padding: 20px 30px;
+    width: 100%;
+    position: fixed;
+    transition: 0.9s;
+    color: #313131;
+    top: 0px;
+    
+}
+.nav.top{
+    background: transparent;
+
+}
+
+.nav a.current,
+.nav a:hover{
+    color: rgba(255, 191, 0, 1);
+}
+.nav-icons i{
+    color: #313131;
+    cursor: pointer;
+    padding: 10px;
+    
+}
+
+.p1{
+    font-size: 13px;
+    font-family: "Raleway";
+    color: white;
+    font-weight: 700;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.15);
+    text-align: center;
+    line-height: 30px;
+    padding-top: 150px;
+
+    
+}
+
+#content-text1{
+    text-align: center;
+    font-size: 75px;
+    font-family: "Raleway";
+    color: white;
+    letter-spacing: -0.03em;
+    line-height: 100%;
+    font-weight: bolder;
+}
+
+
+.content-span::before {
+    content: "BROOKLYN";
+    animation: animate infinite 15s;
+    padding-left: 10px;
+    color: rgba(255, 191, 0, 1);
+    
+}
+@keyframes animate {
+  
+    10% {
+        content: "BROOKLYN";
+    }
+
+    25% {
+        content: "AWESOME";
+    }
+
+    50% {
+        content: "CREATIVE";
+    }
+    
+
+    75% {
+        content: "UNIQUE";
+        }
+
+    100% {
+        content: "DESIGNERS";
+        }
+    }
+
+   .content-text2{
+       font-size: 18px;
+       font-family: "Poppins";
+       text-align: center;
+       color: #FFFFFFB3;
+       line-height: 200%;
+   }
+
+   .btn1{
+       text-align: center;
+       border:1px solid rgba(255, 255, 255, 0.15);
+       font-size: 14px !important;
+       background: transparent !important;
+       color: rgba(255, 255, 255, 1) !important;
+       font-weight: 500;
+       cursor: pointer;
+       display: inline-block;
+       padding: 14px 35px;
+       margin-top: 20px;
+   }
+
+ .btn1:hover{
+    background-color:black;
+    
+    
+ }
+
+   #content{
+    padding-top: 80px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    line-height: 30px;
+    -webkit-box-pack: center;
+   
+   }
+
+   #content i{
+       text-align: center;
+       cursor: pointer;
+       color: white;
+       padding-top: 160px;
+       font-size: large;
+   }
+
+/*-------ABOUT--------*/
+#about{
+    margin: 0px -20px;
+    padding: 120px 4.5px;
+    
+    
+}
+.about-tittle{
+    font-size: 40px;
+    font-family: "Raleway";
+    padding: 0px 20px;
+    color: #313131;
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-weight: bolder;
+}
+
+.about-p1{
+    font-size: 17px;
+    color: #313131;
+    text-align: center;
+}
+.about-p2{
+    font-size: 17px;
+    color: #313131;
+    text-align: center;
+}
+
+.brooklyn-span{
+    font-weight: 600;
+}
+
+.planning,
+.branding,
+.web-and-dev{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px 20px;
+    
+}
+#about-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px 0px;
+    padding: 0px 4.5px;
+}
+.about-content-images{
+    width: 38px;
+    height: 38px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction:row;
+    align-items: baseline;
+
+   
+}
+
+#about-content h2{
+    font-size: 18px;
+    color: #313131;
+    font-weight:medium;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+    font-family: "Poppins";
+    display: flex;
+    justify-content: space-between;
+   
+ }
+
+#about-content p{
+    font-size: 14px;
+    margin: 15px 0px;
+    color: #666666;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 30px;
+    
+}
+
+/*--------OTHER-------*/
+
+#other{
+    background: url(../images/p7.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    min-width: 1349px;
+     min-height: 381px;
+     padding-top: 100px;
+}
+
+ .other-p1{
+     font-size: 30px;
+     font-family: "Raleway";
+     color: white;
+     text-align: center;
+     opacity: 1;
+     line-height: 45px !important;
+     letter-spacing: -0.03em;
+     font-weight: 700;
+     font-style: italic;
+     display: flex;
+     align-items: center;
+     max-width: 900px;
+     max-height: 90px;
+     
+ }
+
+ 
+.success-color{
+    color: rgba(255, 191, 0, 1);
+}
+
+
+
+.other-p2{
+    font-size: 12px;
+    font-family: "Poppins";
+    color: #FFFFFF;
+    display: inline-block;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    letter-spacing: 0.1em;
+    font-weight: 500;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    max-width: 650px;
+     max-height: 30px;
+     
+    
+}
+
+  
+  
+
+  
+/*------TEAM------*/
+
+.team-images{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+   
+     
+ }
+.img-hover1{
+    background:url(../images/team1.jpg) no-repeat center center/cover;
+    width: 406.66px;
+    height: 406.66px;
+    
+}
+
+.img-hover2{
+    background: url(../images/team2.jpg) no-repeat center center/cover;
+    width: 406.66px;
+    height: 406.66px;
+    
+}
+
+.img-hover3{
+    background: url(../images/team3.jpg) no-repeat center center/cover;
+    width: 406.66px;
+    height: 406.66px;
+    
+}
+
+.middle {
+   text-align: center;
+   position: relative;
+   top: 50%;
+   transform: translateY(-50%);
+   display: none;
+}
+
+.hover4:hover{
+   display: block;
+
+}
+
+.hover-p{
+    color: white;
+}
+
+.hover-p2{
+    color:rgba(255, 191, 0, 1);
+
+}
+
+.team-images i{
+    color: white;
+    font-size: 18px;
+    padding: 5px;
+}
+
+.tw,
+.in,
+.fa-steam-square{
+    border-top: 1px solid #FFFFFF;
+}
+
+.img-hover1,
+.img-hover2,
+.img-hover3:hover{
+    background-color: #313131;
+    opacity: 1;
+}
+
+/*-------TEAM--------*/
+#team-achievements{
+    background: url(../images/fun-facts.jpg) no-repeat center center/cover;
+}
+
+.team-achievements-tittle{
+    font-size: 40px;
+    font-family: "Raleway";
+    padding: 0px 20px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: -0.03em;
+    font-weight: bolder;
+}
+
+.team-achievements-p1{
+    font-size: 17px;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 20px;
+}
+.team-achievements-p2{
+    font-size: 17px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 600;
+}
+ 
+.team-achievements-flex h1{
+    font-size: 40px;
+    font-family: "Poppins" !important;
+    color:#FFFFFF;
+    text-align: center;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.team-achievements-flex p{
+    font-size: 12px;
+    font-family: "Poppins";
+    margin-top: 10px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    line-height: 125%;
+    color: #ffbf00;
+    text-align: center;
+}
+.ta-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 20px;
+
+}
+.team-achievements-flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.team-achievements-flex1,
+.team-achievements-flex2,
+.team-achievements-flex3,
+.team-achievements-flex4{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    flex-direction: column;
+    padding: 40px 40px ;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    width: 295px;
+    height: 145px;
+}
+
+.yellow-ribbon{
+    background-color: #ffbf00;
+    color: #FFFFFF;
+    padding: 25px  4.5px;
+    min-width: 1340px;
+    
+}
+
+.yellow-ribbon p{
+    max-width:330px;
+    text-align: center;
+    margin: 15px 15px 25px 25x;
+    font-size: 19.6px;
+    font-family: "Poppins";
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+
+}
+
+/*-------SERVICES-------*/
+#services{
+    background: url(../images/our-services.jpg) no-repeat center center/cover;
+    max-width: 1394px ;
+    height: 595px;
+    padding-top: 150px;
+}
+.services-container-img{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.img-service-style{
+    background-color: rgba(225, 225, 225, 0.1) !important;
+    max-width: 100px;
+    max-height: 100px;
+    text-align: center;
+    line-height: 100px;
+    flex-direction: column;
+    padding: 35px 25px;
+   
+}
+
+.services-container h3{
+    color: #ffbf00;
+    font-size: 18px;
+    font-family: "Poppins";
+    font-weight: 500;
+    
+    letter-spacing: -0.01em;
+    word-wrap: break-word;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services-container p{
+    color: #FFFFFF;
+    margin-top: 15px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    line-height: 30px;
+    width: 266.66px;
+    height: 90px;
+}
+.div-service-styling{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.service-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+}
+.services-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/*------WORKS------*/
+
+
+.handmade-work{
+    font-weight: 600;
+}
+
+.works-list{
+
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.works-list a{
+    text-decoration: none;
+    font-size: 12px ;
+    text-align: center;
+    color: #313131;
+    display: flex;
+    
+}
+.works-list ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.works-list li{
+    width: 51px;
+    height: 30px;
+    margin: 0px 20px 20px 0px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+.team-images2{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1340px;
+    height: 1345.67px;
+    padding: 20px 30px 20px 30px;
+    
+}
+.team-hover1{
+    background: url(../images/ipad-1-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+    
+}
+
+.team-hover2{
+    background: url(../images/levi-guzman-_WadwhkNXp0-unsplash-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+}
+.team-hover3{
+    background: url(../images/p12-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+}
+.team-hover4{
+    background: url(../images/clay-banks-XvS-uKUoUao-unsplash-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+}
+.team-hover5{
+    background: url(../images/p3-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+}
+.team-hover6{
+    background: url(../images/nadine-shaabana-pywan95C6lU-unsplash-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+}
+.team-hover7{
+    background: url(../images/tomasz-zagorski-btO5eN4G7aI-unsplash-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+}
+
+.team-hover8{
+    background: url(../images/oliver-niblett-SW_mXtjsDCA-unsplash-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+}
+.team-hover9{
+    background: url(../images/p8-500x500.jpg)no-repeat center center/cover;
+    width: 368.562px;
+    height: 368.562px;
+    padding: 20px;
+}
+
+.connect{
+    background: url(../images/get-connected.jpg);
+}
+.connect-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.cnt-style{
+    width: 295px;
+    height: 172.500px;
+    padding: 0px 20px;
+}
+.connect-container i{
+    width: 70px;
+    height: 70px;
+    font-size: 46px;
+    color: #FFFFFF;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(48, 48, 48, 0.5);
+    padding: 30px;
+    border-radius: 100%;
+
+}
+
+.connect-container h3{
+    font-size: 18px;
+    color: #ffbf00;
+    display: flex;
+    line-height: 125%;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.connect-container p{
+    font-size: 12px;
+    color: #FFFFFF;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+/*--------OTHER--------*/
+
+.mySlides img{
+    border-radius: 100%;
+    width: 200px;
+    height: auto;
+}
