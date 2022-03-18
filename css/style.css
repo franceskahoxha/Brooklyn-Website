@@ -228,22 +228,25 @@
 .about-tittle{
     font-size: 40px;
     font-family: "Raleway";
-    padding: 0px 20px;
+    padding: 30px 20px;
     color: #313131;
     text-align: center;
     letter-spacing: -0.03em;
     font-weight: bolder;
+    padding-top: 60px;
 }
 
 .about-p1{
     font-size: 17px;
     color: #313131;
     text-align: center;
+    
 }
 .about-p2{
     font-size: 17px;
     color: #313131;
     text-align: center;
+    padding-bottom: 20px;
 }
 
 .brooklyn-span{
@@ -265,17 +268,19 @@
     align-items: center;
     justify-content: space-between;
     margin: 40px 0px;
-    padding: 0px 4.5px;
+    padding: 50px 4.5px;
 }
 .about-content-images{
     width: 38px;
     height: 38px;
-    display: flex;
+    float: left;
     justify-content: space-between;
     flex-direction:row;
     align-items: baseline;
-
    
+} 
+.about-icon{
+    float: left;
 }
 
 #about-content h2{
@@ -311,6 +316,7 @@
     min-width: 1349px;
      min-height: 381px;
      padding-top: 100px;
+     text-align: center;
 }
 
  .other-p1{
@@ -346,12 +352,11 @@
     letter-spacing: 0.1em;
     font-weight: 500;
     margin-top: 20px;
-    display: flex;
     align-items: center;
     max-width: 650px;
      max-height: 30px;
-     
     
+     
 }
 
   
@@ -364,7 +369,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 20px;
+    padding: 100px 20px;
+    
    
      
  }
@@ -443,6 +449,7 @@
     text-align: center;
     letter-spacing: -0.03em;
     font-weight: bolder;
+    padding-top: 100px;
 }
 
 .team-achievements-p1{
@@ -456,6 +463,7 @@
     color: #FFFFFF;
     text-align: center;
     font-weight: 600;
+    padding-bottom: 50px;
 }
  
 .team-achievements-flex h1{
@@ -483,14 +491,18 @@
     justify-content: space-between;
     flex-direction: row;
     padding: 20px;
-
+    padding-bottom: 100px;
 }
+
+
 .team-achievements-flex{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    
+
 }
 
 .team-achievements-flex1,
@@ -516,6 +528,7 @@
 }
 
 .yellow-ribbon p{
+    text-decoration: overline;
     max-width:330px;
     text-align: center;
     margin: 15px 15px 25px 25x;
@@ -534,7 +547,7 @@
     background: url(../images/our-services.jpg) no-repeat center center/cover;
     max-width: 1394px ;
     height: 595px;
-    padding-top: 150px;
+    
 }
 .services-container-img{
     width: 44px;
@@ -611,10 +624,13 @@
 .works-list{
 
     list-style: none;
-    display: flex;
+    
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    text-align: center;
+    padding-top: 100px;
+    
 }
 .works-list a{
     text-decoration: none;
@@ -631,12 +647,10 @@
     flex-direction: row;
 }
 .works-list li{
-    width: 51px;
-    height: 30px;
+
     margin: 0px 20px 20px 0px;
     display: flex;
     text-align: center;
-    justify-content: space-between;
     align-items: center;
     flex-direction: row;
 }
@@ -711,16 +725,24 @@
 .connect{
     background: url(../images/get-connected.jpg);
 }
+.cnnt{
+padding-bottom: 70px;
+}
 .connect-container{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 40px 0px 70px 60px;
 }
 .cnt-style{
     width: 295px;
     height: 172.500px;
     padding: 0px 20px;
+}
+
+.connect-container i:hover{
+    background-color: #ffbf00;
 }
 .connect-container i{
     width: 70px;
@@ -734,7 +756,7 @@
     justify-content: center;
     align-items: center;
     background-color: rgba(48, 48, 48, 0.5);
-    padding: 30px;
+    padding: 50px;
     border-radius: 100%;
 
 }
@@ -764,10 +786,182 @@
 
 }
 
-/*--------OTHER--------*/
 
+/*----CLIENTS------*/
 .mySlides img{
     border-radius: 100%;
-    width: 200px;
+    width: 140px;
     height: auto;
+}
+
+
+.slideshow-container{
+    text-align: center;
+    padding-top: 100px;
+}
+
+.fa-angle-left,
+.fa-angle-right{
+
+    cursor: pointer;
+    padding-bottom: 150px;
+      
+}
+
+.clients-p0{
+    font-family: Cambria,"Hoefler Text","Liberation Serif",Times,"Times New Roman",serif;
+    font-size: 20px;
+    line-height: 30px;
+    color: #666666;
+    padding-top: 40px;
+   
+}
+
+.clients-p{
+    color: #313131;
+    font-size: 18px;
+    padding-top: 30px;
+    font-weight: 500px;
+}
+
+.clients-pp{
+    font-size: 12px;
+    color: #31313180;
+    padding-top: 10px;
+}
+/*------IMAGE MOVE------*/
+
+#img-move{
+    background-color: #ffbf00;
+    padding: 40px 4.5px 0px;
+    min-width: 1340px;
+}
+
+.img-move-div{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    padding-bottom: 45px;
+}
+/*-----LETS TALK-------*/
+
+#talk{
+    background: url(../images/contact.jpg) no-repeat center center/cover;
+    padding-bottom: 100px;
+}
+.tk{
+    font-weight: 100;
+}
+
+.information{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.line,
+.location{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    background-color:#00000026;
+    margin: 20px;
+}
+
+.line{
+    width: 630px;
+    height: 750px;
+    
+}
+
+.location{
+    width: 630px;
+    height: 250px;
+}
+.location h3{
+    font-size: 18px;
+    color: #ffbf00;
+}
+
+.location i{
+    color: #ffbf00;
+    font-size: 12px;
+}
+
+.location p{
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: "Poppins";
+    
+}
+.location-p{
+    width: 520px;
+    height: 30px;
+}
+
+.line h3{
+    font-size: 18px;
+    color: #ffbf00;
+}
+
+#name,
+#email,
+#subject,
+#message{
+    background-color: #00000059;
+    padding: 10px;
+    width: 100%;
+    margin: 0px 0px 20px;
+    border: 1px solid transparent;
+}
+
+.line label{
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+.line button{
+    color: #FFFFFF;
+    background-color: #151515e6;
+    padding: 12px 24px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent;
+    width: 100px;
+    height:50px;
+}
+
+.fa-angles-up{
+    text-align: center;
+    cursor: pointer;
+    color: white;
+    font-size: large;
+   
+}
+
+/*-----FOOTER------*/
+footer{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content: space-between;
+    color: #333;
+}
+.footer-p{
+    font-size: 14px;
+    color: #313131;
+}
+.footer-p2{
+    font-size: 10px;
+    color: #313131;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.nav-icons i{
+    padding: 10px;
+   font-size: 16px;
+}
+
+.fa-heart{
+    color:rgba(255, 191, 0, 1) ;
 }

@@ -9,11 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <script src="https://kit.fontawesome.com/a85eccc7b0.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    </script>
     <title>broklyn. | The Original Classic Brooklyn Demo</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#nav" data-offset="65">
  <div id="home">
 
     <header>
@@ -24,10 +22,10 @@
             </div>
           <ul id="menu" class="current">
             <li><a href="#home" class="menu-home">HOME</a> </li>
-            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#about-sec">ABOUT</a></li>
             <li><a href="#team">TEAM</a></li>
             <li><a href="#services">SERVICES</a></li>
-            <li><a href="works">WORKS</a></li>
+            <li><a href="#works">WORKS</a></li>
             <li><a href="#clients">CLIENTS</a></li>
             <li><a href="#talk">LET'S TALK</a></li>
             <li><a href="#news">NEWS</a></li>
@@ -49,14 +47,14 @@
         <div> <p class="content-text2">a creative agency located in Brooklyn, New York.</p>
         </div>
 
-        <a href="#about"><button type="submit" class="btn1">WHAT WE DO</button></a>
+        <a href="#about-sec"><button type="submit" class="btn1">WHAT WE DO</button></a>
         <div id="downarrows">
-        <a href="#about"><i class="fa-solid fa-angles-down"></i> </a>
+        <a href="#about-sec"><i class="fa-solid fa-angles-down"></i> </a>
      </div>
    
     </div>
  </div>
-
+<section id="about-sec">
 <div id="#about">
     <div class="about-tittle">
         <h3>ABOUT BROOKLYN</h3>
@@ -68,7 +66,7 @@
         <p>We’ve won a ton of awards and have been featured in all of the magazines.</p>
     </div>
    <div id="about-content">
-    <img src="images/Layers-01-yellow-01.svg" class="about-content-images"> 
+    <div class="about-icon"><img src="images/Layers-01-yellow-01.svg" class="about-content-images"> </div>
     <div class="planning">
         <h2>Planning & Strategy</h2>
         <p class="about-text">Praesent faucibus nisl sit amet nulla sollicitudin pretium a sed purus. Nullam bibendum porta magna.</p>
@@ -85,10 +83,11 @@
     </div>
    </div>
 </div>
+</section>
 <div id="other">
   
-    <div class="other-p1 col-lg-12 col-md-12 col-sm-3">
-        <div class="container">
+    <div >
+        <div class="other-p1">
         <p>"PASSION LEADS TO DESIGN, DESIGN LEADS TO PERFORMANCE, PERFORMANCE LEADS TO <span class="success-color">SUCCESS!</span> "</p>
     </div>
     <div class="other-p2" >
@@ -246,7 +245,7 @@
             and enjoy our <span class="handmade-work">handmade work</span>  with love for every detail.</p>
     </div>
     <div class="works-list">
-        <div class="container">
+      <div class="container">
         <ul >
             <a href="#"><li>ALL</li></a>
             <a href="#"><li>SIDEUP</li></a>
@@ -254,7 +253,7 @@
             <a href="#"><li>LIGHTBOX</li></a>
             <a href="#"><li>SINGLE PAGE</li></a>
         </ul>
-    </div>
+       </div>
     </div>
 
     <div class="team-images2">
@@ -327,9 +326,14 @@
         <div class="team-achievements-tittle">
             <h3>GET CONNECTED</h3>
         </div>
-        <div class="team-achievements-p1 cnt">
-            <p>If you like a lot of chocolate on your biscuit
-                join our Social Network Club.</p>
+
+        <div class="team-achievements-p1">
+            <p>If you like a lot of chocolate on your biscuit</p>
+        </div>
+        <div class="team-achievements-p2 cnnt">
+            <p>
+                join our Social Network Club.</span>
+            </p>
         </div>
 
         <div class="connect-container">
@@ -371,63 +375,76 @@
         <p>
              who transformed their business website with Brooklyn.</p>
     </div>
-  
+     
+    
     <div class="slideshow-container">
         <div class="mySlides">
         <img src="images/quote-1-demo-1.jpg" alt="">
-        <p class="clients p0">This is really more than a theme - it's almost an all-in-one ecosystem to built and manage your sites.</p>
-        <p class="clients p">
+        <p class="clients-p0">This is really more than a theme - it's almost an all-in-one ecosystem to built and manage your sites.</p>
+        <p class="clients-p">
             HospitalityDef
         </p>
-        <p class="clients pp">
+        <p class="clients-pp">
             BROOKLYN COSTUMER
         </p>
         </div>
         <div class="mySlides">
             <img src="images/quote-2-demo-1.jpg" alt="">
-            <p class="clients p0">
+            <p class="clients-p0">
                 Perfect for dummies that want to create their first website, just like me!
             </p>
-            <p class="clients p">Livedrone</p>
-            <p class="clients pp">BROOKLYN COSTUMER</p>
+            <p class="clients-p">Livedrone</p>
+            <p class="clients-pp">BROOKLYN COSTUMER</p>
         </div>
         <div class="mySlides">
             <img src="images/quote-4-demo-1.jpg" alt="">
-            <p class="clients p0">
+            <p class="clients-p0">
                 Great looking theme that works well and comes with a lot of great options
             </p>
-            <p class="clients p">
+            <p class="clients-p">
                 Kaledoner</p >
             
-            <p class="clients pp">BROOKLYN COSTUMER</p>
+            <p class="clients-pp">BROOKLYN COSTUMER</p>
         </div>
 
         <a class="prev" onclick="plusSlides(-1)"><i class="fa-solid fa-angle-left"></i></a>
-    <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
+     <a class="next" onclick="plusSlides(1)"><i class="fa-solid fa-angle-right"></i></a>
     </div>
    <script src="./javascript/image_slider.js"></script>
+    </div>
+</div>
+<section id="img-move">
+    <div class="img-move-div">
+        <img src="./images/adobe-white.png" alt="">
+        <img src="./images/codekit-white.png" alt="">
+        <img src="./images/envato-white.png" alt="">
+        <img src="./images/github-white.png" alt="">
+        <img src="./images/jquery-white.png" alt="">
 
     </div>
-
-    
-</div>
-
-<div id="talk">
+</section>
+<section id="talk">
     <div class="team-achievements-tittle">
         <h3>LET'S WORK TOGETHER</h3>
     </div>
-    <div class="lets-talk-p1">
-        <p>We welcome you to contact us for more information
+    <div class="team-achievements-p1">
+        <p>We welcome you to contact us for more information</p>
+    </div>
+    <div class="team-achievements-p2 tk">
+        <p>
             about any of our products or services.</p>
     </div>
+
     <div class="information">
+
         <div class="location">
             <h3>Our Location</h3>
-            <p><i class="fa-solid fa-house-chimney"></i> &nbsp; 101 Grand St, Brooklyn, NY 11211</p>
-            <p><i class="fa-solid fa-phone"></i> &nbsp; (305) 555-4446</p>
-            <p><i class="fa-solid fa-earth-africa"></i> &nbsp; brooklyn.unitedthemes.com</p>
-            <p><i class="fa-solid fa-envelope"></i> &nbsp; contact@wp-brooklyn.com</p>
+            <p class="location-p"><i class="fa-solid fa-house-chimney"></i> &nbsp; 101 Grand St, Brooklyn, NY 11211</p>
+            <p class="location-p"><i class="fa-solid fa-phone"></i> &nbsp; (305) 555-4446</p>
+            <p class="location-p"><i class="fa-solid fa-earth-africa"></i> &nbsp; brooklyn.unitedthemes.com</p>
+            <p class="location-p"><i class="fa-solid fa-envelope"></i> &nbsp; contact@wp-brooklyn.com</p>
         </div>
+
         <div class="line">
             <h3>Drop Us A line</h3>
             <div>
@@ -447,15 +464,16 @@
                 <textarea name="message" id="message" cols="70" rows="15" ></textarea>
             </div>
             <button type="submit">Send</button>
-
-    
         </div>
     </div>
-</div>
+        <div id="uparrows">
+            <a href="#home"><i class="fa-solid fa-angles-up"></i></a>
+        </div>
+</section>
 <footer>
     <div class="footer-content">
-        <p>Crafted with <i class="fa-solid fa-heart"></i>  in Brooklyn</p>
-        <p>BROOKLYN. POWERED BY UNITED THEMES™</p>
+        <p class="footer-p">Crafted with <i class="fa-solid fa-heart"></i>  in Brooklyn</p>
+        <p class="footer-p2">BROOKLYN. POWERED BY UNITED THEMES™</p>
     </div>
     <div class="nav-icons">
         <i class="fa fa-behance"></i>
@@ -463,6 +481,8 @@
         <i class="fa-brands fa-facebook-f"></i>
      </div>
 </footer>
+
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js" integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./javascript/image_hover.js"></script>
 <script>
@@ -473,7 +493,7 @@
 </script>
 <script src="./javascript/navbar.js"></script>
 <script src="./javascript/team_image_hover.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
 
 </body>
 </html>
