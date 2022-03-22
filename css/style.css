@@ -56,17 +56,13 @@
 
 #logo{
     display: flex;
-    color: #313131;
     font-size: 22px;
     cursor: pointer;
     font-family: "Raleway";
     letter-spacing: -0.03em;
     font-weight: 700;
 }
-#home a{
-    text-decoration: none;
-    color:#313131;
-}
+
 #menu{
     display:flex ;
     justify-content: space-between;
@@ -93,25 +89,24 @@
     width: 100%;
     position: fixed;
     transition: 0.9s;
-    color: #313131;
     top: 0px;
+    z-index: 1;
     
 }
+
+
 .nav.top{
     background: transparent;
 
 }
-.nav.top2{
-    color: #FFFFFF;
-
+.nav a{
+    text-decoration: none;
+    color: #333;
 }
-
-.nav a.current,
 .nav a:hover{
     color: rgba(255, 191, 0, 1);
 }
 .nav-icons i{
-    color: #313131;
     cursor: pointer;
     padding: 10px;
     
@@ -383,22 +378,87 @@
     background:url(../images/team1.jpg) no-repeat center center/cover;
     width: 406.66px;
     height: 406.66px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
     
+}
+
+.img-hover1::after{
+         content: '';
+        position: absolute;
+        top: 100%;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #333;
+        opacity: 0;
+        -webkit-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+}
+
+.img-hover1:hover::after{
+    top: 0;
+  opacity: 0.8;
 }
 
 .img-hover2{
     background: url(../images/team2.jpg) no-repeat center center/cover;
     width: 406.66px;
     height: 406.66px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
     
 }
+
+.img-hover2::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.img-hover2:hover::after{
+top: 0;
+opacity: 0.8;
+}
+
 
 .img-hover3{
     background: url(../images/team3.jpg) no-repeat center center/cover;
     width: 406.66px;
     height: 406.66px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
     
 }
+
+.img-hover3::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.img-hover3:hover::after{
+top: 0;
+opacity: 0.8;
+}
+
 
 .middle {
    text-align: center;
@@ -406,6 +466,8 @@
    top: 50%;
    transform: translateY(-50%);
    display: none;
+   z-index: 1;
+
 }
 
 .hover4:hover{
@@ -674,7 +736,29 @@
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
     
+
+.team-hover1::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover1:hover::after{
+top: 0;
+opacity: 0.8;
 }
 
 .team-hover2{
@@ -682,36 +766,167 @@
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.team-hover2::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover2:hover::after{
+top: 0;
+opacity: 0.8;
+}
+
 .team-hover3{
     background: url(../images/p12-500x500.jpg)no-repeat center center/cover;
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.team-hover3::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover3:hover::after{
+top: 0;
+opacity: 0.8;
+}
+
 .team-hover4{
     background: url(../images/clay-banks-XvS-uKUoUao-unsplash-500x500.jpg)no-repeat center center/cover;
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.team-hover4::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover4:hover::after{
+top: 0;
+opacity: 0.8;
+}
+
 .team-hover5{
     background: url(../images/p3-500x500.jpg)no-repeat center center/cover;
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.team-hover5::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover5:hover::after{
+top: 0;
+opacity: 0.8;
+}
+
 .team-hover6{
     background: url(../images/nadine-shaabana-pywan95C6lU-unsplash-500x500.jpg)no-repeat center center/cover;
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.team-hover6::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover6:hover::after{
+top: 0;
+opacity: 0.8;
+}
+
 .team-hover7{
     background: url(../images/tomasz-zagorski-btO5eN4G7aI-unsplash-500x500.jpg)no-repeat center center/cover;
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.team-hover7::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover7:hover::after{
+top: 0;
+opacity: 0.8;
 }
 
 .team-hover8{
@@ -719,12 +934,55 @@
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+
+.team-hover8::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover8:hover::after{
+top: 0;
+opacity: 0.8;
+}
+
 .team-hover9{
     background: url(../images/p8-500x500.jpg)no-repeat center center/cover;
     width: 368.562px;
     height: 368.562px;
     padding: 20px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.team-hover9::after{
+    content: '';
+   position: absolute;
+   top: 100%;
+   left: 0;
+   height: 100%;
+   width: 100%;
+   background: #333;
+   opacity: 0;
+   -webkit-transition: all 0.5s ease-in-out;
+   transition: all 0.5s ease-in-out;
+}
+
+.team-hover9:hover::after{
+top: 0;
+opacity: 0.8;
 }
 
 .connect{
@@ -853,7 +1111,7 @@ padding-bottom: 70px;
 
 #talk{
     background: url(../images/contact.jpg) no-repeat center center/cover;
-    padding-bottom: 100px;
+    
 }
 .tk{
     font-weight: 100;
@@ -863,6 +1121,7 @@ padding-bottom: 70px;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding-bottom: 100px;
 }
 .line,
 .location{
@@ -935,12 +1194,22 @@ padding-bottom: 70px;
     width: 100px;
     height:50px;
 }
-
+.uparrows{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-decoration: none;
+}
 .fa-angles-up{
     text-align: center;
     cursor: pointer;
-    color: white;
+    color: #FFFFFF;
     font-size: large;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-decoration: none;
    
 }
 
